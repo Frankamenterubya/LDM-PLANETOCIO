@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes - Planetocio Villalba</title>
+    
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link href="restaurantes.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shopping-bag me-2"></i>Planetocio Villalba
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tiendas.html">Tiendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="restaurantes.html">Restaurantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ocio.html">Ocio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cine.html">Cine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="visitanos.html">Visítanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="page-header">
+        <div class="container">
+            <h1>Restauración</h1>
+            <p class="lead">Sabores para todos los gustos</p>
+        </div>
+    </section>
+
+    
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+              
+                <div class="col-md-4 mb-4">
+                    <div class="restaurant-card" data-bs-toggle="modal" data-bs-target="#mcdonaldsModal">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/04/McDonalds-Logo.png" alt="McDonald's" class="restaurant-logo">
+                        <h5>McDonald's</h5>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="restaurant-card" data-bs-toggle="modal" data-bs-target="#burgerModal">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/05/Burger-King-Logo.png" alt="Burger King" class="restaurant-logo">
+                        <h5>Burger King</h5>
+                    </div>
+                </div>
+
+               
+                <div class="col-md-4 mb-4">
+                    <div class="restaurant-card" data-bs-toggle="modal" data-bs-target="#kfcModal">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/04/KFC-Logo.png" alt="KFC" class="restaurant-logo">
+                        <h5>KFC</h5>
+                    </div>
+                </div>
+
+              
+                <div class="col-md-4 mb-4">
+                    <div class="restaurant-card" data-bs-toggle="modal" data-bs-target="#telepizzaModal">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Logo_telepizza.svg" alt="Telepizza" class="restaurant-logo">
+                        <h5>Telepizza</h5>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="restaurant-card" data-bs-toggle="modal" data-bs-target="#subwayModal">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSjBR33HG8nxpElo7dWL-ewDiUqNIinh6Igg&s" alt="Subway" class="restaurant-logo">
+                        <h5>Subway</h5>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="restaurant-card" data-bs-toggle="modal" data-bs-target="#starbucksModal">
+                        <img src="https://media.revistagq.com/photos/5d5d383031110c000879872d/1:1/w_1080,h_1080,c_limit/logo-starbucks.jpg" alt="Starbucks" class="restaurant-logo">
+                        <h5>Starbucks</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="modal fade" id="mcdonaldsModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">McDonald's</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://santcugatcentre.com/wp-content/uploads/2023/03/mcdonalds.jpg" class="img-fluid mb-3" alt="McDonald's">
+                    <p>La cadena de restaurantes de comida rápida más famosa del mundo. Hamburguesas, patatas fritas, menús infantiles y mucho más.</p>
+                    <p><strong>Horario:</strong> Todos los días: 10:00 - 24:00</p>
+                    <p><strong>Especialidades:</strong> Big Mac, McNuggets, McFlurry</p>
+                    <p><strong>Ubicación:</strong> Planta baja, zona de restauración</p>
+                    <a href="https://www.mcdonalds.es" target="_blank" class="btn btn-primary">Visitar web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="modal fade" id="burgerModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Burger King</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576869294721&ssbinary=true" class="img-fluid mb-3" alt="McDonald's">
+                    <p>Burger King es una cadena de comida rápida de origen estadounidense reconocida por sus hamburguesas a la parrilla. Ofrece un menú variado que incluye patatas fritas, refrescos y opciones para todos los gustos, con un enfoque en la personalización y el sabor.</p>
+                    <p><strong>Horario:</strong> Todos los días: 10:00 - 24:00</p>
+                    <p><strong>Especialidades:</strong> Whopper, Nuggets, KingFusion</p>
+                    <p><strong>Ubicación:</strong> Planta baja, zona de restauración</p>
+                    <a href="https://www.burgerking.es/es/" target="_blank" class="btn btn-primary">Visitar web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>  <div class="modal fade" id="kfcModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">KFC</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://estaticos-cdn.prensaiberica.es/clip/dbc8a4a3-8edb-403d-9e2b-1cf686081052_16-9-discover-aspect-ratio_default_0.jpg" class="img-fluid mb-3" alt="McDonald's">
+                    <p>KFC, siglas de Kentucky Fried Chicken, es una franquicia internacional especializada en pollo frito. Su receta secreta de once hierbas y especias le da un sabor único que ha conquistado a millones de personas en todo el mundo.</p>
+                    <p><strong>Horario:</strong> Todos los días: 10:00 - 24:00</p>
+                    <p><strong>Especialidades:</strong> Bucket de Pollo Original, Crispy Tenders, Twister </p>
+                    <p><strong>Ubicación:</strong> Planta baja, zona de restauración</p>
+                    <a href="https://www.kfc.es" target="_blank" class="btn btn-primary">Visitar web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>  <div class="modal fade" id="telepizzaModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Telepizza</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/21/ea/a7/telepizza.jpg?w=900&h=500&s=1" class="img-fluid mb-3" alt="McDonald's">
+                    <p>Telepizza es una empresa española dedicada al reparto y venta de pizzas. Con una amplia variedad de ingredientes y combinaciones, se ha consolidado como una de las marcas favoritas para disfrutar de comida rápida en casa o en sus locales.</p>
+                    <p><strong>Horario:</strong> Todos los días: 10:00 - 24:00</p>
+                    <p><strong>Especialidades:</strong>Pizza Barbacoa, Pizza 4 Quesos, Palitos de pan con queso</p>
+                    <p><strong>Ubicación:</strong> Planta baja, zona de restauración</p>
+                    <a href="https://www.telepizza.es" target="_blank" class="btn btn-primary">Visitar web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>  <div class="modal fade" id="subwayModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Subway</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/64/37/fe/subway.jpg?w=800&h=500&s=1" class="img-fluid mb-3" alt="McDonald's">
+                    <p>Subway es una cadena internacional de comida rápida centrada en bocadillos preparados al momento. Permite a los clientes personalizar sus subs con una gran selección de ingredientes frescos, pan horneado y salsas al gusto.</p>
+                    <p><strong>Horario:</strong> Todos los días: 10:00 - 24:00</p>
+                    <p><strong>Especialidades:</strong> Sub de Pollo Teriyaki, Italian B.M.T.®, Galletas Subway</p>
+                    <p><strong>Ubicación:</strong> Planta baja, zona de restauración</p>
+                    <a href="https://subwayspain.com" target="_blank" class="btn btn-primary">Visitar web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="starbucksModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Starbucks</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://cdn.restauracionnews.com/2023/12/Starbucks-3.jpg" class="img-fluid mb-3" alt="Starbucks">
+                    <p>La cafetería premium por excelencia. Café de especialidad, frappés, tés y repostería artesanal en un ambiente acogedor.</p>
+                    <p><strong>Horario:</strong> Lunes a Domingo: 8:00 - 22:00</p>
+                    <p><strong>Especialidades:</strong> Frappuccino, Latte, Caramel Macchiato</p>
+                    <p><strong>Ubicación:</strong> Primera planta, zona central</p>
+                    <a href="https://www.starbucks.es" target="_blank" class="btn btn-primary">Visitar web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Planetocio Villalba</h5>
+                    <p>C/ de la Constitución, 4, 28400 Collado Villalba, Madrid</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="aviso-legal.html" class="me-3">Aviso Legal</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

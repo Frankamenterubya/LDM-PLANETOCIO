@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Planetocio Villalba</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="contactanos.css">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shopping-center me-2"></i>
+                Planetocio Villalba
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tiendas.html">Tiendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ocio.html">Ocio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cine.html">Cine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="visitanos.html">Visítanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">
+                <i class="fas fa-envelope me-3"></i>
+                Contacto
+            </h1>
+            <p class="hero-subtitle">
+                Estamos aquí para ayudarte. Envíanos tu consulta y te responderemos lo antes posible.
+            </p>
+        </div>
+    </section>
+
+  
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <h3 class="section-title">Envíanos tu mensaje</h3>
+                        <form id="contactForm" action="http://www.cursos-diseno.es/mostrar.php" method="post" novalidate>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                                        <label for="nombre">Nombre *</label>
+                                        <div class="invalid-feedback">
+                                            Por favor, introduce tu nombre.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            ¡Perfecto!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                                        <label for="apellidos">Apellidos *</label>
+                                        <div class="invalid-feedback">
+                                            Por favor, introduce tus apellidos.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            ¡Perfecto!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
+                                    <label for="direccion">Dirección *</label>
+                                    <div class="invalid-feedback">
+                                        Por favor, introduce tu dirección.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        ¡Perfecto!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                        <label for="email">Email *</label>
+                                        <div class="invalid-feedback">
+                                            Por favor, introduce un email válido.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            ¡Perfecto!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="confirmaEmail" name="confirmaEmail" placeholder="Confirma Email" required>
+                                        <label for="confirmaEmail">Confirma Email *</label>
+                                        <div class="invalid-feedback">
+                                            Los emails no coinciden.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            ¡Los emails coinciden!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required pattern="[0-9]{9}">
+                                    <label for="telefono">Teléfono *</label>
+                                    <div class="invalid-feedback">
+                                        Por favor, introduce un teléfono válido (9 dígitos).
+                                    </div>
+                                    <div class="valid-feedback">
+                                        ¡Perfecto!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="comentarios" name="comentarios" placeholder="Comentarios" style="height: 150px" required></textarea>
+                                    <label for="comentarios">Comentarios *</label>
+                                    <div class="invalid-feedback">
+                                        Por favor, introduce tus comentarios.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        ¡Perfecto!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="loading">
+                                <i class="fas fa-spinner fa-2x mb-2"></i>
+                                <p>Enviando mensaje...</p>
+                            </div>
+
+                            <div class="success-message">
+                                <i class="fas fa-check-circle fa-2x mb-2"></i>
+                                <h5>¡Mensaje enviado correctamente!</h5>
+                                <p>Gracias por contactar con nosotros. Te responderemos en breve.</p>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit">
+                                <i class="fas fa-paper-plane me-2"></i>
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h4>
+                            <i class="fas fa-info-circle me-2"></i>
+                            Información de Contacto
+                        </h4>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div>
+                                <p class="contact-text">
+                                    <strong>Dirección:</strong><br>
+                                    Av. Juan Carlos I, 46<br>
+                                    28400 Collado Villalba, Madrid
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div>
+                                <p class="contact-text">
+                                    <strong>Teléfono:</strong><br>
+                                    918 50 24 00
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div>
+                                <p class="contact-text">
+                                    <strong>Email:</strong><br>
+                                    info@planetocio.es
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <div>
+                                <p class="contact-text">
+                                    <strong>Horario de Atención:</strong><br>
+                                    Lunes a Domingo<br>
+                                    10:00 - 22:00
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-share-alt contact-icon"></i>
+                            <div>
+                                <p class="contact-text">
+                                    <strong>Síguenos:</strong><br>
+                                    <a href="#" class="text-decoration-none me-3">
+                                        <i class="fab fa-facebook text-primary"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none me-3">
+                                        <i class="fab fa-instagram text-danger"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fab fa-twitter text-info"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Planetocio Villalba</h5>
+                    <p>Tu centro comercial de referencia en Collado Villalba. Más de 100 tiendas, restaurantes, cines y entretenimiento para toda la familia.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 Planetocio Villalba. Todos los derechos reservados.</p>
+                    <p>
+                        <a href="aviso-legal.html" class="text-light text-decoration-none me-3">Aviso Legal</a>
+                        <a href="contacto.html" class="text-light text-decoration-none">Contacto</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    const emailInput = document.getElementById('email');
+    const confirmaEmailInput = document.getElementById('confirmaEmail');
+    const loadingDiv = document.querySelector('.loading');
+    const successDiv = document.querySelector('.success-message');
+
+    
+    function validateEmails() {
+        const email = emailInput.value;
+        const confirmaEmail = confirmaEmailInput.value;
+
+        if (confirmaEmail && email !== confirmaEmail) {
+            confirmaEmailInput.classList.add('is-invalid');
+            confirmaEmailInput.classList.remove('is-valid');
+            return false;
+        } else if (confirmaEmail && email === confirmaEmail) {
+            confirmaEmailInput.classList.add('is-valid');
+            confirmaEmailInput.classList.remove('is-invalid');
+            return true;
+        }
+        return true;
+    }
+
+    emailInput.addEventListener('input', validateEmails);
+    confirmaEmailInput.addEventListener('input', validateEmails);
+
+    
+    document.getElementById('telefono').addEventListener('input', function (e) {
+        const telefono = e.target.value.replace(/\D/g, '');
+        e.target.value = telefono;
+
+        if (telefono.length === 9) {
+            e.target.classList.add('is-valid');
+            e.target.classList.remove('is-invalid');
+        } else if (telefono.length > 0) {
+            e.target.classList.add('is-invalid');
+            e.target.classList.remove('is-valid');
+        }
+    });
+
+
+    function validateField(field) {
+        if (field.checkValidity()) {
+            field.classList.add('is-valid');
+            field.classList.remove('is-invalid');
+            return true;
+        } else {
+            field.classList.add('is-invalid');
+            field.classList.remove('is-valid');
+            return false;
+        }
+    }
+
+    const fields = form.querySelectorAll('input, textarea');
+    fields.forEach(field => {
+        field.addEventListener('blur', () => validateField(field));
+        field.addEventListener('input', () => {
+            if (field.classList.contains('is-invalid')) {
+                validateField(field);
+            }
+        });
+    });
+
+    
+    form.addEventListener('submit', function (e) {
+        let isValid = true;
+
+        fields.forEach(field => {
+            if (!validateField(field)) {
+                isValid = false;
+            }
+        });
+
+        if (!validateEmails()) {
+            isValid = false;
+        }
+
+        if (!isValid) {
+            e.preventDefault();
+            const firstInvalid = form.querySelector('.is-invalid');
+            if (firstInvalid) {
+                firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                firstInvalid.focus();
+            }
+        } else {
+           
+            loadingDiv.style.display = 'block';
+        }
+    });
+});
+</script>
+
+
+</body>
+</html>

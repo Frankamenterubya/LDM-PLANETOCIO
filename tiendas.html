@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendas - Planetocio Villalba</title>
+    
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link href="tiendas.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shopping-bag me-2"></i>Planetocio Villalba
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tiendas.html">Tiendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ocio.html">Ocio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cine.html">Cine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="visitanos.html">Visítanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+    <section class="page-header">
+        <div class="container">
+            <h1>Nuestras Tiendas</h1>
+            <p class="lead">Descubre las mejores marcas y productos</p>
+        </div>
+    </section>
+
+    
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-4 mb-4">
+                    <div class="store-card" data-bs-toggle="modal" data-bs-target="#zaraModal">
+                        <img src="data:image/png;base64,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" alt="Zara" class="store-logo">
+                        <h5>Zara</h5>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="store-card" data-bs-toggle="modal" data-bs-target="#hmModal">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/04/HM-Logo.png" alt="HyM" class="store-logo">
+                        <h5>HyM</h5>
+                    </div>
+                </div>
+
+               
+                <div class="col-md-4 mb-4">
+                    <div class="store-card" data-bs-toggle="modal" data-bs-target="#mangoModal">
+                        <img src="https://i0.wp.com/www.vectorizando.com/wp-content/uploads/2021/05/Mango-f71d4366.png?fit=500%2C500&ssl=1" alt="Mango" class="store-logo" height="580px">
+                        <h5>Mango</h5>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="store-card" data-bs-toggle="modal" data-bs-target="#pullModal">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Actual_logo_pull_and_bear.jpg" alt="Pull & Bear" class="store-logo">
+                        <h5>Pull y Bear</h5>
+                    </div>
+                </div>
+
+               
+                <div class="col-md-4 mb-4">
+                    <div class="store-card" data-bs-toggle="modal" data-bs-target="#bershkaModal">
+                        <img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/4c91874300006400050dde6a/0x0.png" alt="Bershka" class="store-logo">
+                        <h5>Bershka</h5>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="store-card" data-bs-toggle="modal" data-bs-target="#stradivariusModal">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTclw1WDC8i5sIruMeT_T5Juz1J-GrSiZch6w&s" alt="Stradivarius" class="store-logo">
+                        <h5>Stradivarius</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="modal fade" id="zaraModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Zara</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://s1.abcstatics.com/abc/www/multimedia/recreo/2023/09/08/zara-RxykOR8UZknFdVMcvchaWsN-1200x840@abc.jpg" class="img-fluid mb-3" alt="Tienda Zara">
+                    <p>Zara es una cadena española de tiendas de ropa perteneciente al grupo Inditex. Ofrece moda actual y de calidad para hombre, mujer y niños.</p>
+                    <p><strong>Horario:</strong> Lunes a Sábado: 10:00 - 22:00, Domingo: 12:00 - 21:00</p>
+                    <p><strong>Planta:</strong> Primera planta, zona A</p>
+                    <a href="https://www.zara.com" target="_blank" class="btn btn-primary">Visitar web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="hmModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">HM</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://www.bankinter.com/file_source/blog/Contents/A-Documentos/Informes%20empresas/informe-hm.jpg" class="img-fluid mb-3" alt="HM">
+                    <p>HyM es una reconocida marca sueca de moda con presencia internacional. Se especializa en ofrecer ropa y accesorios modernos y asequibles para mujeres, hombres, jóvenes y niños, combinando estilo y sostenibilidad en sus colecciones.</p>
+                    <p><strong>Horario:</strong> Lunes a Sábado: 10:00 - 22:00, Domingo: 12:00 - 21:00</p>
+                    <p><strong>Planta:</strong> Primera planta, zona A</p>
+                    <a href="https://www2.hm.com/es_es/index.html?srsltid=AfmBOooxnllj12ScXu9gjiZNeYY2tOZQ8ARHNBvgbNcFI1_nQlSpGKKt" target="_blank" class="btn btn-primary">Visitar web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="mangoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mango</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://america-retail.com/wp-content/uploads/2024/04/tienda-mango.jpg" class="img-fluid mb-3" alt="Tienda Zara">
+                    <p>Mango es una marca española de moda que combina elegancia y modernidad en sus diseños. Ofrece ropa y accesorios tanto para mujeres como para hombres, con un enfoque en la calidad, el diseño contemporáneo y la sofisticación.</p>
+                    <p><strong>Horario:</strong> Lunes a Sábado: 10:00 - 22:00, Domingo: 12:00 - 21:00</p>
+                    <p><strong>Planta:</strong> Primera planta, zona A</p>
+                    <a href="https://shop.mango.com/es/es" target="_blank" class="btn btn-primary">Visitar web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="pullModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pull and Bear</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://lacanadashopping.com/wp-content/uploads/2024/08/PullBear-scaled.jpeg" class="img-fluid mb-3" alt="Tienda Zara">
+                    <p>Pull and Bear es una firma de moda juvenil del grupo Inditex, que fusiona las últimas tendencias urbanas con un estilo desenfadado. Sus prendas están pensadas para un público joven y dinámico que busca comodidad sin renunciar al diseño.</p>
+                    <p><strong>Horario:</strong> Lunes a Sábado: 10:00 - 22:00, Domingo: 12:00 - 21:00</p>
+                    <p><strong>Planta:</strong> Primera planta, zona A</p>
+                    <a href="https://www.pullandbear.com/es/mujer-n6417?utm_source=google&utm_medium=cpc&utm_campaign=PB_PER_MarcaPura_GADS_ES_SEARCH_BRAND_MIX_UNISEX&gclsrc=aw.ds&gad_source=1&gad_campaignid=288959201&gclid=CjwKCAjwl_XBBhAUEiwAWK2hzobZDKME2FCc8YKpsWG0HcwWaiSUs4xrS_cqrAXX86ejz5mWiuGBhRoCjhQQAvD_BwE" target="_blank" class="btn btn-primary">Visitar web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="bershkaModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bershka</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://cclaljub.com/wp-content/uploads/2019/05/Bershka.jpg" class="img-fluid mb-3" alt="Tienda Zara">
+                    <p>Bershka es una marca contemporánea de Inditex dirigida a un público joven que quiere destacar con looks atrevidos y actuales. Su catálogo incluye ropa, calzado y complementos inspirados en la música, el arte y la cultura urbana.</p>
+                    <p><strong>Horario:</strong> Lunes a Sábado: 10:00 - 22:00, Domingo: 12:00 - 21:00</p>
+                    <p><strong>Planta:</strong> Primera planta, zona A</p>
+                    <a href="https://www.bershka.com/es/" target="_blank" class="btn btn-primary">Visitar web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="stradivariusModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Stradivarius</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://s1.elespanol.com/2025/02/19/mujer/moda/925417918_253254753_1706x1280.jpg" class="img-fluid mb-3" alt="Tienda Zara">
+                    <p>Stradivarius, también parte de Inditex, está orientada a mujeres jóvenes que disfrutan expresarse a través de la moda. Sus colecciones destacan por un estilo femenino, elegante y creativo, adaptado a las tendencias internacionales.</p>
+                    <p><strong>Horario:</strong> Lunes a Sábado: 10:00 - 22:00, Domingo: 12:00 - 21:00</p>
+                    <p><strong>Planta:</strong> Primera planta, zona A</p>
+                    <a href="https://www.stradivarius.com/es/?srsltid=AfmBOopN3HMvCx6tVbAD1hn95Dt_Jh25lSU-NwySQzmcQn3H7i9mIM0z" target="_blank" class="btn btn-primary">Visitar web oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Planetocio Villalba</h5>
+                    <p>C/ de la Constitución, 4, 28400 Collado Villalba, Madrid</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="aviso-legal.html" class="me-3">Aviso Legal</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
